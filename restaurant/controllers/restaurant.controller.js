@@ -37,7 +37,7 @@ export const registerRestaurant = async(req, res)=>{
         successResponse(res, 
             201, 
             "Restaurant Registered!", 
-            newRestaurant)
+            restaurantData)
 
     } catch (error) {
         errorResponse(res,400,error.message,null, error)
