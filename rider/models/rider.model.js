@@ -7,7 +7,8 @@ const riderSchema = new Schema({
     },
     status: {
         type: String,
-        default: "available"
+        enum: ["AVAILABLE","NOT_AVAILABLE"],
+        default: "AVAILABLE"
     },
     email:{
         type: String,
