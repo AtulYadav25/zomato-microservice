@@ -29,6 +29,32 @@ export const getAllItems = async(req, res)=>{
 }
 
 
+export const getItems = async(req, res)=>{
+    try {
+        console.log(req.body)
+        const { itemIds } = req.body;
+
+        // let itemIds = ["iadsdasd", "sadasdasd"]
+
+        const items = await ItemModel.find({
+            _id: { $in: itemIds },
+            status: "AVAILABLE"
+        });
+
+        return successResponse(
+            res,
+            200,
+            "Items fetched successfully!",
+            items
+        );
+
+    } catch (error) {
+        console.log(error.message)
+        errorResponse(res,400,error.message,null, error)
+    }
+}
+
+
 export const addMenuItem = async(req, res)=>{
     try {
         //Data is already valdiated by middleware
@@ -99,6 +125,7 @@ export const deleteItem = async(req, res)=>{
 const itemController = {
     addMenuItem,
     getAllItems,
+    getItems,
     deleteItem,
     toggleItemStatus
 }

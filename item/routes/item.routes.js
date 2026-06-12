@@ -14,6 +14,9 @@ router.post('/new',
 router.get('/getAllItems', 
     itemController.getAllItems);
 
+router.post('/getItems', 
+    itemController.getItems);
+
 router.delete('/:itemId', 
     authEntity("restaurantId"), 
     itemController.deleteItem);
