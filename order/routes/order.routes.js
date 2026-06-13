@@ -5,8 +5,12 @@ import { authEntity } from '../middlewares/auth.middleware.js';
 import userController from '../controllers/user.controller.js';
 import riderController from '../controllers/rider.Controller.js';
 import restaurantController from '../controllers/restaurant.controller.js';
+import orderController from '../controllers/order.controller.js';
 
 const router = express.Router();
+
+//Order Routes
+router.get('/:orderId', orderController.getOrder);
 
 //Order Routes for User
 router.post('/place-order', authEntity("userId"),validate(placeOrderSchema), userController.placeOrder); // TODO : Edit ValidateBody Middleware
