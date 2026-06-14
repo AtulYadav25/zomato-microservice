@@ -23,6 +23,6 @@ app.use(express.urlencoded({extended: true}));
 app.use(cookieParser())
 
 //Routes
-app.use('/api/order', orderRoutes);
+app.use('/', orderRoutes);
 
 export default app;

@@ -25,6 +25,6 @@ app.use(express.urlencoded({extended: true}));
 app.use(cookieParser())
 
 //Routes
-app.use('/api/item', itemRoutes);
+app.use('/', itemRoutes);
 
 export default app;

@@ -23,6 +23,6 @@ app.use(express.urlencoded({extended: true}));
 app.use(cookieParser())
 
 //Routes
-app.use('/api/rider', riderRoutes);
+app.use('/', riderRoutes);
 
 export default app;

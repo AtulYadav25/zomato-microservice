@@ -25,6 +25,6 @@ app.use(express.urlencoded({extended: true}));
 app.use(cookieParser())
 
 //Routes
-app.use('/api/payment', paymentRoutes);
+app.use('/', paymentRoutes);
 
 export default app;
