@@ -1,0 +1,834 @@
+{
+  "info": {
+    "_postman_id": "6b710b74-2960-4d3e-801c-7aa42feac66c",
+    "name": "Zomato-MicroService",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49026217",
+    "_collection_link": "https://go.postman.co/collection/49026217-6b710b74-2960-4d3e-801c-7aa42feac66c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Restaurant",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Atul Dhabha\",\r\n    \"email\": \"atul.dhabha@gmail.com\",\r\n    \"password\": \"hehe\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{restaurantBaseUrl}}/register",
+              "host": [
+                "{{restaurantBaseUrl}}"
+              ],
+              "path": [
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"atul.dhabha@gmail.com\",\r\n    \"password\": \"hehe\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{restaurantBaseUrl}}/login",
+              "host": [
+                "{{restaurantBaseUrl}}"
+              ],
+              "path": [
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{restaurantBaseUrl}}/logout",
+              "host": [
+                "{{restaurantBaseUrl}}"
+              ],
+              "path": [
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Toggle Availability",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\": \"close\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{restaurantBaseUrl}}/toggle-availability",
+              "host": [
+                "{{restaurantBaseUrl}}"
+              ],
+              "path": [
+                "toggle-availability"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Rider",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"sensi\",\r\n    \"email\": \"sensi@gmail.com\",\r\n    \"password\": \"hehe\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{riderBaseUrl}}/register",
+              "host": [
+                "{{riderBaseUrl}}"
+              ],
+              "path": [
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"sensi@gmail.com\",\r\n    \"password\": \"hehe\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{riderBaseUrl}}/login",
+              "host": [
+                "{{riderBaseUrl}}"
+              ],
+              "path": [
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{riderBaseUrl}}/logout",
+              "host": [
+                "{{riderBaseUrl}}"
+              ],
+              "path": [
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Toggle Availability",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\": \"close\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{riderBaseUrl}}/toggle-availability",
+              "host": [
+                "{{riderBaseUrl}}"
+              ],
+              "path": [
+                "toggle-availability"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"titan\",\r\n    \"email\": \"titan@gmail.com\",\r\n    \"password\": \"hehe\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{userBaseUrl}}/register",
+              "host": [
+                "{{userBaseUrl}}"
+              ],
+              "path": [
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"titan@gmail.com\",\r\n    \"password\": \"hehe\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{userBaseUrl}}/login",
+              "host": [
+                "{{userBaseUrl}}"
+              ],
+              "path": [
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{userBaseUrl}}/logout",
+              "host": [
+                "{{userBaseUrl}}"
+              ],
+              "path": [
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Payment",
+      "item": [
+        {
+          "name": "PayForOrder",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"amount\": 1191.54\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{paymentBaseUrl}}/pay/:orderId",
+              "host": [
+                "{{paymentBaseUrl}}"
+              ],
+              "path": [
+                "pay",
+                ":orderId"
+              ],
+              "variable": [
+                {
+                  "key": "orderId",
+                  "value": "6a2e6d04df6d77356b391342"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Item",
+      "item": [
+        {
+          "name": "Add New Item",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{json_web_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Fried Rice (Chings Chinese) Full Plate\",\r\n    \"price\": 420\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{itemBaseUrl}}/new",
+              "host": [
+                "{{itemBaseUrl}}"
+              ],
+              "path": [
+                "new"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Items",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{itemBaseUrl}}/getAllItems",
+              "host": [
+                "{{itemBaseUrl}}"
+              ],
+              "path": [
+                "getAllItems"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Item",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{itemBaseUrl}}/getItem/:itemId",
+              "host": [
+                "{{itemBaseUrl}}"
+              ],
+              "path": [
+                "getItem",
+                ":itemId"
+              ],
+              "variable": [
+                {
+                  "key": "itemId",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Toggle Availability",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\": \"AVAILABLE\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{itemBaseUrl}}/:itemId/toggle-availability",
+              "host": [
+                "{{itemBaseUrl}}"
+              ],
+              "path": [
+                ":itemId",
+                "toggle-availability"
+              ],
+              "variable": [
+                {
+                  "key": "itemId",
+                  "value": "6a26628504aa53d42f02132d"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Item",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\": \"AVAILABLE\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{itemBaseUrl}}/:itemId",
+              "host": [
+                "{{itemBaseUrl}}"
+              ],
+              "path": [
+                ":itemId"
+              ],
+              "variable": [
+                {
+                  "key": "itemId",
+                  "value": "6a26628504aa53d42f02132d"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Order",
+      "item": [
+        {
+          "name": "User",
+          "item": [
+            {
+              "name": "Place Order",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{json_web_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"items\": [\r\n        {\r\n            \"itemId\": \"6a2bd8f57519e22bca8141bc\",\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"itemId\": \"6a2bd91a7519e22bca8141bd\",\r\n            \"quantity\": 1\r\n        }\r\n    ],\r\n    \"deliveryAddress\":{\r\n        \"addressLine1\": \"Ganesh Colony\",\r\n        \"city\": \"Pune\",\r\n        \"state\": \"Maharastra\",\r\n        \"pincode\": 411017\r\n    }\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{orderBaseUrl}}/place-order",
+                  "host": [
+                    "{{orderBaseUrl}}"
+                  ],
+                  "path": [
+                    "place-order"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Cancel Order",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{json_web_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{orderBaseUrl}}/cancel-order/:orderId",
+                  "host": [
+                    "{{orderBaseUrl}}"
+                  ],
+                  "path": [
+                    "cancel-order",
+                    ":orderId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "orderId",
+                      "value": "6a2be05954a8e003fb87cdbe"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Restaurant",
+          "item": [
+            {
+              "name": "Accept Order",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{json_web_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{orderBaseUrl}}/restaurant/accept-order/:orderId",
+                  "host": [
+                    "{{orderBaseUrl}}"
+                  ],
+                  "path": [
+                    "restaurant",
+                    "accept-order",
+                    ":orderId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "orderId",
+                      "value": "6a2e67bfa408c8324b16a27a"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Order Ready",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{json_web_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{orderBaseUrl}}/restaurant/order-ready/:orderId",
+                  "host": [
+                    "{{orderBaseUrl}}"
+                  ],
+                  "path": [
+                    "restaurant",
+                    "order-ready",
+                    ":orderId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "orderId",
+                      "value": "6a2bed9320a7f00c346e6a13"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Rider",
+          "item": [
+            {
+              "name": "Accept Order",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{json_web_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{orderBaseUrl}}/rider/accept-order/:orderId",
+                  "host": [
+                    "{{orderBaseUrl}}"
+                  ],
+                  "path": [
+                    "rider",
+                    "accept-order",
+                    ":orderId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "orderId",
+                      "value": "6a2bed9320a7f00c346e6a13"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Pickup Order",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{json_web_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"pickedUpItemsRestaurantId\": \"6a2bd8c9a25d88593afe10cb\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{orderBaseUrl}}/rider/pickup-order/:orderId",
+                  "host": [
+                    "{{orderBaseUrl}}"
+                  ],
+                  "path": [
+                    "rider",
+                    "pickup-order",
+                    ":orderId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "orderId",
+                      "value": "6a2bed9320a7f00c346e6a13"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Deliver Order",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{json_web_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{orderBaseUrl}}/rider/deliver-order/:orderId",
+                  "host": [
+                    "{{orderBaseUrl}}"
+                  ],
+                  "path": [
+                    "rider",
+                    "deliver-order",
+                    ":orderId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "orderId",
+                      "value": "6a2bed9320a7f00c346e6a13"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "restaurantBaseUrl",
+      "value": ""
+    },
+    {
+      "key": "riderBaseUrl",
+      "value": ""
+    },
+    {
+      "key": "userBaseUrl",
+      "value": ""
+    },
+    {
+      "key": "itemBaseUrl",
+      "value": ""
+    },
+    {
+      "key": "orderBaseUrl",
+      "value": ""
+    },
+    {
+      "key": "paymentBaseUrl",
+      "value": ""
+    }
+  ]
+}
