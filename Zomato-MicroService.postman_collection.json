@@ -1,10 +1,10 @@
 {
   "info": {
-    "_postman_id": "6b710b74-2960-4d3e-801c-7aa42feac66c",
+    "_postman_id": "39d9f5ed-350c-4f6d-979b-3edc80da670e",
     "name": "Zomato-MicroService",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "49026217",
-    "_collection_link": "https://go.postman.co/collection/49026217-6b710b74-2960-4d3e-801c-7aa42feac66c?source=collection_link"
+    "_collection_link": "https://go.postman.co/collection/49026217-39d9f5ed-350c-4f6d-979b-3edc80da670e?source=collection_link"
   },
   "item": [
     {
@@ -805,30 +805,54 @@
       ]
     }
   ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
   "variable": [
     {
       "key": "restaurantBaseUrl",
-      "value": ""
+      "value": "http://localhost:3000/api/restaurant"
     },
     {
       "key": "riderBaseUrl",
-      "value": ""
+      "value": "http://localhost:3000/api/rider"
     },
     {
       "key": "userBaseUrl",
-      "value": ""
+      "value": "http://localhost:3000/api/user"
     },
     {
       "key": "itemBaseUrl",
-      "value": ""
+      "value": "http://localhost:3000/api/item"
     },
     {
       "key": "orderBaseUrl",
-      "value": ""
+      "value": "http://localhost:3000/api/order"
     },
     {
       "key": "paymentBaseUrl",
-      "value": ""
+      "value": "http://localhost:3000/api/payment"
     }
   ]
 }
