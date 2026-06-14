@@ -5,3 +5,5 @@ packages:
   - "payment"
   - "rider"
   - "order"
+  - "gateway"
+  - "kafka"

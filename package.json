@@ -1,0 +1,7 @@
+{
+    "type": "module",
+    "scripts": {
+        "init-env": "node scripts/init-env.js",
+        "dev": "pnpm -r --parallel run dev --stream"
+    }
+}
