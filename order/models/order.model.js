@@ -71,6 +71,7 @@ const orderSchema = new Schema({
       required: true,
       min: 0,
     },
+    paidAt: Date,
     deliveredAt: Date,
     cancelledAt: Date,
 },{

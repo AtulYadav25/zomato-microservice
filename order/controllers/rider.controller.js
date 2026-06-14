@@ -26,6 +26,12 @@ const assignRider = async (req, res) => {
                 "Rider is already Assigned"
             )
         };
+    
+        if (order.paymentStatus !== "PAID") {
+            return errorResponse(res, 404,
+                "Order Not Paid, please wait.."
+            )
+        }
 
         //Assign Rider
         order.riderAssigned = req.entity.riderId;

@@ -1,0 +1,7 @@
+packages:
+  - "user"
+  - "item"
+  - "restaurant"
+  - "payment"
+  - "rider"
+  - "order"

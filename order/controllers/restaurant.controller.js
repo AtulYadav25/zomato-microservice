@@ -19,8 +19,12 @@ const acceptOrder = async (req, res) => {
             )
         }
 
+        if(order.paymentStatus !== "PAID"){
+            return errorResponse(res, 400, "Order is not paid yet!")
+        }
+
         //Filter items for this restaurant
-        const itemsForThisRestaurant = order.items.filter(item=> item.restaurantId === req.entity.restaurantId);
+        const itemsForThisRestaurant = order.items.filter(item=> item.restaurantId.toString() === req.entity.restaurantId);
 
         //Check if already accepted the order
         if (itemsForThisRestaurant.some(item=> item.acceptedAt)) {

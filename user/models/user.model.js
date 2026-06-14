@@ -14,6 +14,17 @@ const userSchema = new Schema({
         type: String,
         required: true,
         select: false,
+    },
+    totalSpent: {
+        type: Number,
+        default: 0,
+    },
+    totalOrders:{
+        type: Number,
+        default: 0
+    },
+    lastOrderAt:{
+        type: Date
     }
 },{
     timestamps: true

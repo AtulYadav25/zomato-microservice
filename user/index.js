@@ -1,5 +1,6 @@
 import app from "./app.js";
 import http from 'http'
+import './services/userConsumer.js'
 
 const PORT = process.env.PORT
 
