@@ -1,7 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
-import cors from 'cors'
 
 //Mongoose
 import {connectMongoose} from './config/db.js'
@@ -20,7 +19,6 @@ connectMongoose();
 
 //Middlewars
 app.use(express.json());
-app.use(cors())
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser())
 
